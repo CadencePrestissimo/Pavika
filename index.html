@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name ="viewpoint" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Pavika</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class ="banner">
+      <header>
+        <p class="logo" id="space">My Space</p>
+
+        <a class="open-button" onclick="openForm()" id="but"></a>
+      <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+      <ul class="opento">
+      <li><a href="index.html" id="home">Home</a></li>
+      <li><a href="about.html" id="about"> About</a></li>
+      <li><a href="artworks.html"id="artwork"> Artworks </a></li>
+      <li><a href="blogs.html" id="blog"> Blogs</a></li>
+      <li><a type="button" class="btn cancel" onclick="closeForm()">Close</a></li>
+      </ul>
+      </form>
+      </div>
+      <script>
+      function openForm() {
+      document.getElementById("myForm").style.display = "block";
+      document.getElementById("but").style.display="none";
+      document.getElementById("space").style.display="none";
+      }
+
+      function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+        document.getElementById("but").style.display="";
+          document.getElementById("space").style.display="";
+      }
+      </script>
+
+      </header>
+    <img  style="opacity:0.8" src="mymy.jpg"></img>
+
+    <div class="content">
+    <img  class="i" src="my.jpeg" alt="Avatar"></img>
+   <div class="sign">  <a target="_blank">____A Petite Piece_____</a></div>
+   <div class="center">
+    <div class="social-test">
+    <ul class="social">
+      <li><a href="https://www.facebook.com/pavika.chaudhary.7/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/pavikachaudhary"><i class="fa fa-twitter" aria-hidden="true"></a></i></li>
+      <li><a href="https://instagram.com/_pavika__"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="https://github.com/pavikachaudhary"><i class="fa fa-github" aria-hidden="true"></a></i></li>
+    </li>
+    </ul>
+    </div>
+  </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>

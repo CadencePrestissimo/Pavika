@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+
+
+
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.banner
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner img
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner .content
+{
+  position: absolute;
+  max-width: 650px;
+  text-align: center;
+}
+.container-w
+{
+  align-content: center;
+  width:1100px;
+  background-color: #fffbf1;
+  opacity: 0.9;
+  padding-left: 50px;
+  padding-right:50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 20px;
+  font-family:"Comic Sans MS", cursive, sans-serif;;
+
+}
+
+
+  @keyframes tipsy
+  {
+  0 {transform: translateX(-50%) translateY(-50%) rotate(0deg);}
+  100% {transform: translateX(-50%) translateY(-50%) rotate(360deg);}
+  }
+
+.banner .content .sign
+{
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 80px;
+  font-weight:600;
+  font-family:serif;
+  text-decoration:inherit;
+  letter-spacing: -3px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.banner .content .sign :before,
+.banner .content .sign :after {
+  content: ' ';
+  padding: .5em .2em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display:inline-grid;
+  border: 15px solid blue;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.banner .content .sign :before {
+  border-color: #5E2D79 #5E2D79 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.banner .content .sign :after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #5E2D79 #5E2D79;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+
+.center {
+  display: table;
+  width: 100%;
+}
+
+.social-test {
+  display:table-cell;
+  text-align: center;
+  font-size: 30px;
+  position:relative;
+  top: 220px;}
+
+  .social-test .social {
+    padding-left: 0px;
+  }
+  li {
+    display:inline;
+  }
+  li a {
+    color: rgba(256, 256, 256, 20);
+    border-radius: 6px;
+    list-style-type: none;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding: 1%;
+    border: 1px solid rgba(256, 256, 256, 0.6);
+    cursor:pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;}
+    &:hover {
+      color: rgba(256, 256, 256, 1);
+      border: 1px solid rgba(256, 256, 256, 1);
+    }
+
+
+.social:hover > li {
+  opacity: 0.5;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
+.credits, .credits a {
+  font-size: 20px;
+  font-family:serif;
+  color: rgba(256, 256, 256, 0.6);
+}
+
+.content .i {
+  position:absolute;
+  width:200px;
+  height:200px;
+  top:-250px;
+  left:25%;
+  border-radius: 50%;
+  border:7px solid silver;
+}
+
+
+.banner header
+{
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: auto;
+  width:100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index : 10000;
+}
+.banner header .logo
+{
+  color:#fff;
+  text-decoration: none;
+  font-size: 24px;
+  position: static;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.banner header .toggle
+{
+position:static;
+background: url(toggle.png);
+background-size: cover;
+cursor: pointer;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-image: url(toggle.png);
+  padding: 16px 20px;
+  position:relative;
+  cursor: pointer;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-popup .opento
+{
+ font-size: 25px;
+ text-align: center;
+}
+/* Add styles to the form container */
+.form-container
+{
+  max-width: 300px;
+  padding: 10px;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:#5E2D79;
+  opacity: 0.6;
+  width:auto;
+  height: auto;
+
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.container-image{
+  position:relative;
+  width:cover;
+}
+.container-image .img1
+{
+  width:10px;
+  height:20px;
+}

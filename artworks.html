@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+  <body >
+    <div class ="banner">
+      <header >
+        <p class="logo" id="space">My Space</p>
+
+        <a class="open-button" onclick="openForm()" id="but"></a>
+      <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+      <ul class="opento">
+      <li><a href="index.html" id="home">Home</a></li>
+      <li><a href="about.html" id="about"> About</a></li>
+      <li><a href="artworks.html"id="artwork"> Artworks </a></li>
+      <li><a href="blogs.html" id="blog"> Blogs</a></li>
+      <li><a type="button" class="btn cancel" onclick="closeForm()">Close</a></li>
+      </ul>
+      </form>
+      </div>
+      <script>
+      function openForm() {
+      document.getElementById("myForm").style.display = "block";
+      document.getElementById("but").style.display="none";
+      document.getElementById("space").style.display="none";
+      }
+
+      function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+        document.getElementById("but").style.display="";
+          document.getElementById("space").style.display="";
+      }
+      </script>
+      </header>
+        <img style="opacity:0.9" src="mymy.jpg"></img>
+        <div class="container-w">
+      <center>    <h1 >&hearts; Welcome &hearts; </h1><br></br></center>
+    <center>  <p>"...The town is silent.<br></br> The night boils with eleven stars.
+           <br></br>Oh starry starry night!<br></br> This is how
+        I want to die."</p></center>
+        </div>
+</div>
+       <div class="container-image">
+    <center>  <img src="aa.j" alt="coming soon" style="width:500px;height:600px;"> </center>
+      </div>
+</body>
+</html>

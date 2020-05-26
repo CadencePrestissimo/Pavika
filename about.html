@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name ="viewpoint" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Know me </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class ="banner">
+      <header>
+        <p class="logo" id="space">My Space</p>
+
+        <a class="open-button" onclick="openForm()" id="but"></a>
+      <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+      <ul class="opento">
+      <li><a href="index.html" id="home">Home</a></li>
+      <li><a href="about.html" id="about"> About</a></li>
+      <li><a href="artworks.html"id="artwork"> Artworks </a></li>
+      <li><a href="blogs.html" id="blog"> Blogs</a></li>
+      <li><a type="button" class="btn cancel" onclick="closeForm()">Close</a></li>
+      </ul>
+      </form>
+      </div>
+      <script>
+      function openForm() {
+      document.getElementById("myForm").style.display = "block";
+      document.getElementById("but").style.display="none";
+      document.getElementById("space").style.display="none";
+      }
+
+      function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+        document.getElementById("but").style.display="";
+          document.getElementById("space").style.display="";
+      }
+      </script>
+
+      </header>
+
+    <img style="opacity:0.9" src="mymy.jpg"></img>
+
+    <div class="container-w">
+      <h2 "style= text-align:center;">About me ! </h2>
+   <p>  Hi, I am Pavika Chaudhary. I hail from 'The city of Nawabs' &hearts; Lucknow &hearts; . I am currently pursuing Bachelors in Information Technology from Indian Insitute of Information Technology, Allahabad.
+   <br></br>Disclosing myself a-bit-more , I am a self-learned artist &hearts;. I enjoy painting and everything that involves artistic creativity. I am also a foodie &hearts;,a wanna-be traveller, a basketball player, a somnophile, a Marvel-fan and an enthusiast learner.
+   I enjoy 'the good stuff' out there, be it Tv series (GOT Season 8 , is my fav!. Relax, just joking !), movies, youtube videos or anything other form of art.
+   <br></br>This site is a small room for my blogs, my projects, my artworks and my journey that will reflect all the related work.Feel free to lurk around a bit longer here!
+ <br></br></p>
+
+    </div>
+
+      </div>
+
+
+  </body>
+</html>
