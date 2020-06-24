@@ -31,23 +31,46 @@
       document.getElementById("space").style.display="none";
       }
 
+
       function closeForm() {
       document.getElementById("myForm").style.display = "none";
         document.getElementById("but").style.display="";
           document.getElementById("space").style.display="";
       }
+      var arr=[
+      "url('art1.jpg')","url('art2.jpg')","url('art3.jpg')","url('art4.jpg')","url('art5.jpg')","url('art6.jpg')","url('art7.jpg')"
+    ]
+
+      var c=2;
+      function imagess(){
+          c++;
+          if(c==1)
+          {
+            c++;
+           document.getElementById("h1").style.display="blank";
+           document.getElementById("abb2").style.width="410px";
+           document.getElementById("abb2").style.height="540px";
+           document.getElementById("abb2").style.background=arr[c-1];
+
+          }
+          else {
+            document.getElementById("h1").style.display="none";
+            document.getElementById("abb2").style.width="540px";
+            document.getElementById("abb2").style.height="410px";
+            document.getElementById("abb2").style.background=arr[c-1];
+            if(c==7)c=0;
+          }
+      }
       </script>
+
       </header>
         <img style="opacity:0.9" src="mymy.jpg"></img>
-        <div class="container-w">
-      <center>    <h1 >&hearts; Welcome &hearts; </h1><br></br></center>
-    <center>  <p>"...The town is silent.<br></br> The night boils with eleven stars.
-           <br></br>Oh starry starry night!<br></br> This is how
-        I want to die."</p></center>
-        </div>
-</div>
-       <div class="container-image">
-    <center>  <img src="aa.j" alt="coming soon" style="width:500px;height:600px;"> </center>
+              <div ><li><a type="button" class="container-c" onclick="imagess()">Back</a></li></div>
+          <div id="h2"><li><a  class="container-2" id='abb2'></a></li></div>
+          <div id="h1"><li><a  class="container-1" id='abb1'></a></li></div>
+             <div><li><a type="button" class="container-c" onclick="imagess()" >Next</a></li></div>
+
       </div>
+      <script src="script.js"></script>
 </body>
 </html>
